@@ -1,0 +1,71 @@
+.live1{
+    width: 10%;
+    padding-left: 10px;
+    border: 1px solid saddlebrown;
+}
+#question1{
+    padding: 5px 15px;
+}
+#question2{
+    padding: 5px 15px;
+}
+#question3{
+    padding: 5px 15px;
+}
+.liDiv{
+    width: 80%;
+    height: 2rem;
+    /*border: 1px solid darkcyan;*/
+    overflow: hidden;
+    text-align: center;
+    margin: 5px auto;
+
+}
+.liDiv li{
+    animation: animates 25s infinite;
+}
+@keyframes animates {
+    0%{transform: translateY(0);}
+    20%{transform: translateY(-50px);}
+    40%{transform: translateY(-100px);}
+    60%{transform: translateY(-150px);}
+    80%{transform: translateY(-100px);}
+    90%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+}
+#scr-view{
+    /*white-space: nowrap;*/
+    width: 1200px;
+    height: 100px;
+    display: flex;
+}
+#scr-view div{
+    width: 60px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+
+}
+#scr-view img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+#scr-view span{
+  font-size: 12px;
+
+}
+
+.tep-title {
+    position: relative;
+}
+.tep-title span{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    font-size: 1.6rem;
+    color: white;
+    font-family: "微软雅黑";
+}

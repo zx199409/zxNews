@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title></head><body></body></html><script type="text/javascript">var brightness = 0.5;
+    $().ready(function(){
+// 创建遮罩层
+        (function createCover(){
+            $(document.body).append(
+                    $('<div/>').attr('id',"divCover")
+                            .css({
+                                "display":"none",
+                                "background":"#000",
+                                "position":"absolute",
+                                "left":"0px",
+                                "top":"0px",
+                                "width": $(document).width()+'px',
+                                "height": $(document).height()+'px',
+                                "z-index":"9999",
+                                "opacity": brightness
+                            }));
+        })();
+        $("#open").click(function(){// 打开
+            $("#divCover").css("opacity", brightness = 0.5);
+            $("#divCover").show();
+        });
+        $("#close").click(function(){// 关闭
+            $("#divCover").hide();
+        });
+        $("#add").click(function(){// 增加亮度
+            $("#divCover").css("opacity", brightness -= 0.1);
+        });
+        $("#delete").click(function(){// 减少亮度
+            $("#divCover").css("opacity", brightness += 0.1);
+        });
+    });</script>

@@ -1,0 +1,90 @@
+<ion-view view-title="设置">
+    <ion-nav-bar class="bar bar-assertive">
+
+    </ion-nav-bar>
+    <ion-nav-buttons>
+        <a class="button button-clear icon ion-chevron-left" href="#/tabs/personal"></a>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+
+            <div class="item item-divider">
+                账号设置
+            </div>
+
+            <a class="item" href="#/login">
+                个人设置
+            </a>
+            <a class="item" href="#">
+                绑定其他平台
+            </a>
+        </div>
+        <div class="item item-divider">
+            系统设置
+        </div>
+
+        <a class="item" href="#">
+            栏目插件设置
+        </a>
+        <a class="item" href="#">
+            字体设置
+        </a>
+        <a class="item" href="#">
+            阅读偏好
+        </a>
+        <a class="item" href="#">
+            正文字号
+        </a>
+        <a class="item item-toggle">
+            要闻推送
+            <label class="toggle toggle-assertive">
+                <input type="checkbox">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </a>
+        <li class="item item-toggle" class="dark">
+            夜间模式
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-click="Change()" >
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </li>
+        <a class="item item-toggle">
+            回复我的跟帖
+            <label class="toggle toggle-assertive">
+                <input type="checkbox">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </a>
+        <a class="item" href="#">
+            手动清理
+        </a>
+        </div>
+        <div class="list">
+
+            <div class="item item-divider">
+                其他设置
+            </div>
+
+            <a class="item" href="#">
+                检查更新
+            </a>
+            <a class="item" href="#">
+                应用推荐
+            </a>
+            <a class="item" href="#">
+                封面故事
+            </a>
+            <a class="item" href="#">
+                关于
+            </a>
+        </div>
+    </ion-content>
+    pointer-in
+</ion-view>

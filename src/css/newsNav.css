@@ -1,0 +1,82 @@
+html,body{
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.scroll1{
+    white-space: nowrap;
+    width: 700px;
+    display: flex;
+    /*justify-content: space-around;*/
+    font-size: 20px;
+    text-align: center;
+
+}
+.scroll1 a{
+    text-decoration: none;
+    font-family: Aharoni;
+    color: rgb(225,225,225);
+}
+.might{
+    /*height: 200px;*/
+    /*width: 300px;*/
+    margin-top: 40px;
+    background-color: #0a9dc7;
+}
+/*#btn{*/
+   /*margin-top: -40px;*/
+/*}*/
+.listDiv {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.leftImg{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+}
+.title1{
+    padding-left: 20px;
+    color: gray;
+}
+.spanDiv{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+.lmodify{
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    color: gray;
+}
+.sourceSpan{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: .8em;
+    color: gray;
+}
+
+.newsimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.word{
+    width: 95%;
+    border-radius: 3px;
+}
+
+
+.tan i{
+    border-radius: 50%;
+}
+/*#spanDiv img{*/
+    /*width: 80px!important;*/
+    /*height: 80px!important;*/
+/*}*/

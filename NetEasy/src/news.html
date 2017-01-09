@@ -1,0 +1,36 @@
+<!--首页-->
+<ion-view view-title="新闻">
+    <ion-scroll class="topListScroll" has-bouncing="true" direction="x" scrollbar-x="false" style="margin-top: 4.4rem;z-index: 99999;background-color: white;">
+        <div style="width: 100rem">
+            <a ng-repeat="num in [1,2,3,4,5,6,7,8,9,0,1,1,2,3,1,1,1,1,1,1] track by $index" class="button button-clear button-small button-dark" style="white-space:nowrap">{{num}}</a>
+        </div>
+    </ion-scroll>
+    <!--给ion-content添加滑动事件-->
+    <ion-content style="margin-top: 2.9rem" on-drag="dragOpenSlide()">
+        <!--在content里使用ion-slide-box来承载 实现页面的滑动-->
+        <ion-slide-box show-pager="false" style="margin-top: -20px" delegate-handle="mainSlideBox" on-slide-changed="slideChanged($index)">
+            <ion-slide>
+
+                <mg-slide-box source-array="news.adsArray"></mg-slide-box>
+                <ion-item ng-repeat="num in [0,1,2,3,4,5,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1] track by $index">
+                    {{num}}
+                </ion-item>
+            </ion-slide>
+            <ion-slide>
+                <mg-slide-box source-array="news.newsArray"></mg-slide-box>
+                <ion-item ng-repeat="num in [1,2,3,4,5,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1] track by $index">
+                {{num}}
+                </ion-item>
+            </ion-slide>
+            <ion-slide>
+                <ion-item ng-repeat="num in [1,2,3,4,5,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1] track by $index">
+                    {{num}}
+                </ion-item>
+            </ion-slide>
+        </ion-slide-box>
+
+        <button class="button button-outline button-assertive" ng-click="showConfirm()">点我</button>
+
+    </ion-content>
+
+</ion-view>>

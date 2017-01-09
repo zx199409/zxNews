@@ -1,0 +1,30 @@
+
+<ion-view>
+    <ion-header-bar class="bar bar-light">
+        <a class="button button-clear icon ion-android-arrow-back" href="#/tabs/news" nav-direction="forward"></a>
+        <a class="button button-clear icon ion-android-more-vertical" nav-direction="forward" ng-click="doSome()"></a>
+    </ion-header-bar>
+    <!--设置图片完整性-->
+    <ion-content class="newsimg">
+            <h3>{{newsSummary.detail.title}}</h3>
+            <span>{{newsSummary.detail.ptime}}</span>
+            <span>{{newsSummary.detail.source}}</span>
+            <div ng-bind-html="newsSummary.detail.body"></div>
+
+    </ion-content>
+    <ion-footer-bar class="bar bar-light">
+
+        <a class="button button-clear icon ion-chatbubble-working" >{{newsSummary.detail.replyCount}}</a>
+        <label class="item item-input">
+            <i class="icon ion-android-create placeholder-icon"></i>
+            <!--<input type="text" placeholder="写跟帖" class="word">-->
+        </label>
+        <input type="text" placeholder="写跟帖" class="word">
+        <a class="button button-clear icon ion-android-share-alt" ng-click="goShare() "></a>
+        <!--可以两个button同时放在两边-->
+        <!--<a class="button button-clear pull-right">-->
+            <!--<i class="icon ion-chatbubble-working ">{{newsSummary.detail.replyCount}}</i>-->
+            <!--<i class="button button-clear icon ion-android-share-alt"></i>-->
+        <!--</a>-->
+    </ion-footer-bar>
+</ion-view>
